@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en_EN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="components/svg/svg.js" type="module"></script>
+        <link rel="stylesheet" type="text/css" href="components/svg/svg.css"/>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <nice-svg class="blur pointer" icon="question" tooltip="Any questions?"></nice-svg>
+        <nice-svg class="success blur" icon="check" tooltip="All fine!"></nice-svg>
+        <nice-svg class="error blur" icon="close" tooltip="An error!"></nice-svg>
+        <nice-svg class="hover_slow_spin" icon="cog" tooltip="Settings"></nice-svg>
+        <nice-svg class="pointer" icon="send" tooltip="Submit" onclick="this.setLoading(); setTimeout( () => { this.removeLoading() }, 3000)"></nice-svg>
+    </body>
+</html>
